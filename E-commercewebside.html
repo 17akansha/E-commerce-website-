@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #0f1010;
+        }
+
+        /* Header with Search Bar */
+        header {
+            background-color: #007bff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: rgba(249, 240, 240, 0.91);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            width: 50%;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #ffffff;
+            padding: 10px 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #b90b0bd2;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e7e1e1e3;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MyStore</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="c:\Users\kumar\Downloads\smartphone.jpg" alt="Product 1">
+                <h3>Smartphone</h3>
+                <p>₹4,440</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\kumar\Downloads\laptop.jpg" alt="Product 2">
+                <h3>Laptop</h3>
+                <p>₹44,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\kumar\Downloads\headphone.jpg" alt="Product 3">
+                <h3>Headphones</h3>
+                <p>₹999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\kumar\Downloads\shirt.jpg" alt="Product 4">
+                <h3>Shirt</h3>
+                <p>₹99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
